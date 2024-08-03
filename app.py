@@ -13,7 +13,7 @@ st.title('Diabetes Prediction')
 preg = st.number_input('Pregnancies', min_value=0, step=1)
 glucose = st.number_input('Glucose', min_value=0, step=1)
 bp = st.number_input('Blood Pressure', min_value=0, step=1)
-st = st.number_input('Skin Thickness', min_value=0, step=1)  # Ensure variable names are unique
+st_ = st.number_input('Skin Thickness', min_value=0, step=1)  # Ensure variable names are unique
 insulin = st.number_input('Insulin', min_value=0, step=1)
 bmi = st.number_input('BMI', min_value=0.0, step=0.1)
 dpf = st.number_input('Diabetes Pedigree Function', min_value=0.0, step=0.01)
@@ -22,7 +22,7 @@ age = st.number_input('Age', min_value=0, step=1)
 # Predict button
 if st.button('Predict'):
     # Prepare the data
-    data = np.array([[preg, glucose, bp, st, insulin, bmi, dpf, age]])
+    data = np.array([[preg, glucose, bp, st_, insulin, bmi, dpf, age]])
     # Make prediction
     prediction = classifier.predict(data)
     # Display result
