@@ -13,7 +13,7 @@ st.title('Diabetes Prediction')
 preg = st.number_input('Pregnancies', min_value=0, step=1)
 glucose = st.number_input('Glucose', min_value=0, step=1)
 bp = st.number_input('Blood Pressure', min_value=0, step=1)
-st = st.number_input('Skin Thickness', min_value=0, step=1)
+st = st.number_input('Skin Thickness', min_value=0, step=1)  # Ensure variable names are unique
 insulin = st.number_input('Insulin', min_value=0, step=1)
 bmi = st.number_input('BMI', min_value=0.0, step=0.1)
 dpf = st.number_input('Diabetes Pedigree Function', min_value=0.0, step=0.01)
